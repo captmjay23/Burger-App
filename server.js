@@ -19,7 +19,7 @@ const frontAppRoute = require("./backend/routes/app");
 
 app.use("/", frontAppRoute);
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
   console.log(`Listening on port: ${PORT}`);
