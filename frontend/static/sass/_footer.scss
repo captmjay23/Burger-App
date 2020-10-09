@@ -1,0 +1,135 @@
+@import "./mediaQueries";
+.main{
+
+  .footer{
+    background: $tertiary-color;
+    color: $primary-color;
+
+    .wrapper{
+
+      .footer-content{
+        height: 20vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__about{
+
+          h2{
+            font-size: 2rem; 
+            font-weight: 400;
+            text-transform: uppercase;
+          }
+
+          p{
+            font-size: 1.125rem;
+            font-weight: 300;
+          }
+
+        }
+
+        &__brandingLogo{
+
+          a{
+            text-decoration: underline;
+            font-size: 1.125rem;
+            letter-spacing: 2px;
+          }
+
+        }
+
+        &__contact{
+          
+          h2{
+            font-size: 2rem; 
+            font-weight: 400;
+            text-transform: uppercase;
+          }
+
+          p{
+            font-size: 1.125rem;
+            font-weight: 300;
+          }
+         
+          .footer-icons{
+
+            .fa-facebook,
+            .fa-youtube{
+              color: $secondary-color;
+              font-size: 2rem;
+              margin-right: 1em;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+/* Mobile Devices 567px */
+@media (max-width: 567px){
+  .main{
+
+    .footer{
+
+      .wrapper{
+  
+        .footer-content{
+          height: auto;
+          flex-direction: column;
+          padding: 30px 0;
+          text-align: center;
+          &__about{
+           
+            h2{
+              font-size: 2rem; 
+            }
+  
+            p{
+              font-size: 1.125rem;
+            }
+  
+          }
+  
+          &__brandingLogo{
+            margin: 2em 0;
+            a{
+              font-size: 1.125rem;
+            }
+  
+          }
+  
+          &__contact{
+            
+            h2{
+              font-size: 1.55rem; 
+            }
+  
+            p{
+              font-size: 1.125rem;
+            }
+           
+            .footer-icons{
+  
+              .fa-facebook,
+              .fa-youtube{
+                font-size: 1.525rem;
+              }
+  
+            }
+  
+          }
+  
+        }
+  
+      }
+  
+    }
+  }
+}

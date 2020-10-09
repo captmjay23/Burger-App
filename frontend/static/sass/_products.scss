@@ -1,0 +1,366 @@
+@import "./mediaQueries";
+.main {
+  .bossBurger-Product {
+    background-image: url("../images/products-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 5em 0;
+
+    .wrapper {
+      .product-title {
+        text-align: center;
+        font-size: 3rem;
+        color: #fff;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+
+      .burger-items {
+        display: grid;
+        grid-template-columns: 260px 260px 260px;
+        grid-template-rows: 300px 300px;
+        grid-gap: 2em;
+        justify-content: center;
+
+        &__item:nth-child(1) {
+          grid-column: 1/2;
+          grid-row: 1/2;
+        }
+        &__item:nth-child(2) {
+          grid-column: 2/3;
+          grid-row: 1/2;
+        }
+        &__item:nth-child(3) {
+          grid-column: 3/4;
+          grid-row: 1/2;
+        }
+        &__item:nth-child(4) {
+          grid-column: 1/2;
+          grid-row: 2/3;
+        }
+        &__item:nth-child(5) {
+          grid-column: 2/3;
+          grid-row: 2/3;
+        }
+        &__item:nth-child(6) {
+          grid-column: 3/4;
+          grid-row: 2/3;
+        }
+
+        &__item {
+          border: 1px solid $secondary-color;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+
+          h3 {
+            color: $primary-color;
+            font-size: 1.225rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+          }
+
+          .price-add-cart {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 0.5em;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            span {
+              font-size: 1.425rem;
+            }
+
+            .fa-cart-plus {
+              color: $secondary-color;
+              font-size: 1.425rem;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Desktop Laptop 1200px */
+@media (max-width: 1200px) and (min-width: 992px) {
+}
+/* Tablet Devices 992px */
+@media (max-width: 991px) and (min-width: 768px) {
+  .main {
+    .bossBurger-Product {
+      background: url(../images/products-bg.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      padding: 5em 0;
+
+      .wrapper {
+        .product-title {
+          text-align: center;
+          font-size: 3rem;
+          color: #fff;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+
+        .burger-items {
+          display: grid;
+          grid-template-columns: 260px 260px;
+          grid-template-rows: 300px 300px 300px;
+          grid-gap: 2em;
+          justify-content: center;
+
+          &__item:nth-child(1) {
+            grid-column: 1/2;
+            grid-row: 1/2;
+          }
+          &__item:nth-child(2) {
+            grid-column: 2/3;
+            grid-row: 1/2;
+          }
+          &__item:nth-child(3) {
+            grid-column: 1/2;
+            grid-row: 2/3;
+          }
+          &__item:nth-child(4) {
+            grid-column: 2/3;
+            grid-row: 2/3;
+          }
+          &__item:nth-child(5) {
+            grid-column: 1/2;
+            grid-row: 3/4;
+          }
+          &__item:nth-child(6) {
+            grid-column: 2/3;
+            grid-row: 3/4;
+          }
+
+          &__item {
+            border: 1px solid $secondary-color;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            h3 {
+              color: $primary-color;
+              font-size: 1.225rem;
+              font-weight: 300;
+              letter-spacing: 2px;
+            }
+
+            .price-add-cart {
+              width: 100%;
+              position: absolute;
+              bottom: 0;
+              margin-bottom: 0.5em;
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+
+              span {
+                font-size: 1.425rem;
+              }
+
+              .fa-cart-plus {
+                color: $secondary-color;
+                font-size: 1.425rem;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* Tablet/Mobile Large 768px */
+@media (max-width: 767px) and (min-width: 568px) {
+  .main {
+    .bossBurger-Product {
+      background: url(../images/products-bg.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      padding: 5em 0;
+
+      .wrapper {
+        .product-title {
+          text-align: center;
+          font-size: 3rem;
+          color: #fff;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+
+        .burger-items {
+          display: grid;
+          grid-template-columns: 260px 260px;
+          grid-template-rows: 300px 300px 300px;
+          grid-gap: 2em;
+          justify-content: center;
+
+          &__item:nth-child(1) {
+            grid-column: 1/2;
+            grid-row: 1/2;
+          }
+          &__item:nth-child(2) {
+            grid-column: 2/3;
+            grid-row: 1/2;
+          }
+          &__item:nth-child(3) {
+            grid-column: 1/2;
+            grid-row: 2/3;
+          }
+          &__item:nth-child(4) {
+            grid-column: 2/3;
+            grid-row: 2/3;
+          }
+          &__item:nth-child(5) {
+            grid-column: 1/2;
+            grid-row: 3/4;
+          }
+          &__item:nth-child(6) {
+            grid-column: 2/3;
+            grid-row: 3/4;
+          }
+
+          &__item {
+            border: 1px solid $secondary-color;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            h3 {
+              color: $primary-color;
+              font-size: 1.225rem;
+              font-weight: 300;
+              letter-spacing: 2px;
+            }
+
+            .price-add-cart {
+              width: 100%;
+              position: absolute;
+              bottom: 0;
+              margin-bottom: 0.5em;
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+
+              span {
+                font-size: 1.425rem;
+              }
+
+              .fa-cart-plus {
+                color: $secondary-color;
+                font-size: 1.425rem;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* Mobile Devices 567px */
+@media (max-width: 567px) {
+  .main {
+    .bossBurger-Product {
+      background: url(../images/products-bg.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      padding: 5em 0;
+
+      .wrapper {
+        .product-title {
+          text-align: center;
+          font-size: 3rem;
+          color: #fff;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+
+        .burger-items {
+          display: grid;
+          grid-template-columns: 260px;
+          grid-template-rows: 300px 300px 300px 300px 300px 300px;
+          grid-gap: 2em;
+          justify-content: center;
+
+          &__item:nth-child(1) {
+            grid-column: 1/2;
+            grid-row: 1/2;
+          }
+          &__item:nth-child(2) {
+            grid-column: 1/2;
+            grid-row: 2/3;
+          }
+          &__item:nth-child(3) {
+            grid-column: 1/2;
+            grid-row: 3/4;
+          }
+          &__item:nth-child(4) {
+            grid-column: 1/2;
+            grid-row: 4/5;
+          }
+          &__item:nth-child(5) {
+            grid-column: 1/2;
+            grid-row: 5/6;
+          }
+          &__item:nth-child(6) {
+            grid-column: 1/2;
+            grid-row: 6/7;
+          }
+
+          &__item {
+            border: 1px solid $secondary-color;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            h3 {
+              color: $primary-color;
+              font-size: 1.225rem;
+              font-weight: 300;
+              letter-spacing: 2px;
+            }
+
+            .price-add-cart {
+              width: 100%;
+              position: absolute;
+              bottom: 0;
+              margin-bottom: 0.5em;
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+
+              span {
+                font-size: 1.425rem;
+              }
+
+              .fa-cart-plus {
+                color: $secondary-color;
+                font-size: 1.425rem;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import "./fonts";
+
+// Variables
+$primary-color: #fff;
+$secondary-color: #dac404;
+$tertiary-color: #000;
+// Reset
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  background-color: $tertiary-color;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+// Helper Class
+.wrapper {
+  max-width: 1700px;
+  width: 95%;
+  margin: 0 auto;
+}
+.accent-text-color {
+  color: $secondary-color;
+}
+// Style Class
+.btn {
+  display: inline-block;
+  outline: none;
+  color: $tertiary-color;
+  padding: 0.5em 3em;
+  font-weight: 500;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.btn.btn-primary {
+  background-color: $secondary-color;
+  transition: background-color, color, 300ms ease-in-out;
+}
+.btn.btn-primary:hover {
+  color: $secondary-color;
+  background-color: $primary-color;
+}
+// Mixin
+@mixin hoverTransition {
+  transition: background-color, color, 300ms ease-in-out;
+}
+@mixin clickTransition {
+  transition: transform 500ms ease-in-out;
+} ;

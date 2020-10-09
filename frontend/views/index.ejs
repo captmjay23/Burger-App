@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>bossROD Burger</title>
+  <%- include('./partials/header.ejs') %>
+</head>
+<body>
+  <!-- Header -->
+  <%- include('./partials/nav.ejs') %>
+  <!-- Main -->
+  <main class="main">
+    <!-- Hero -->
+    <section class="hero" id="goto-Hero">
+      <div class="wrapper">
+        <div class="hero__content">
+          <div class="hero-description">
+            <h1 class="hero-description__title"><span class="accent-text-color">boss</span> Burger</h1>
+            <p class="hero-description__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#!" class="btn btn-primary">Order Now!</a>
+          </div>
+          <div class="hero-image-container">
+            <img src="../static/assets/images/home-hero-img.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- bossBurger Product -->
+    <section class="bossBurger-Product" id="goto-Products">
+      <div class="wrapper">
+        <h2 class="product-title">Start Your <span class="accent-text-color">Order Today</span></h2>
+        <div class="burger-items">
+          <div class="burger-items__item">
+            <div class="image-container">
+              <img src="../static/assets/images/products-bbq-burger.png" alt="">
+            </div>
+            <h3>Bacon <span class="accent-text-color">Burger</span></h3>
+            <div class="price-add-cart">
+              <span class="accent-text-color">PHP 30.00</span>
+              <i class="fas fa-cart-plus"></i>
+            </div>
+          </div>
+          <div class="burger-items__item">
+            <div class="image-container">
+              <img src="../static/assets/images/products-classic-burger.png" alt="">
+            </div>
+            <h3>Classic <span class="accent-text-color">Burger</span></h3>
+            <div class="price-add-cart">
+              <span class="accent-text-color">PHP 30.00</span>
+              <i class="fas fa-cart-plus"></i>
+            </div>
+          </div>
+          <div class="burger-items__item">
+            <div class="image-container">
+              <img src="../static/assets/images/products-crispy-burger.png" alt="">
+            </div>
+            <h3>Crispy <span class="accent-text-color">Burger</span></h3>
+            <div class="price-add-cart">
+              <span class="accent-text-color">PHP 30.00</span>
+              <i class="fas fa-cart-plus"></i>
+            </div>
+          </div>
+          <div class="burger-items__item">
+            <div class="image-container">
+              <img src="../static/assets/images/products-bbq-burger.png" alt="">
+            </div>
+            <h3>Bbq <span class="accent-text-color">Burger</span></h3>
+            <div class="price-add-cart">
+              <span class="accent-text-color">PHP 30.00</span>
+              <i class="fas fa-cart-plus"></i>
+            </div>
+          </div>
+          <div class="burger-items__item">
+            <div class="image-container">
+              <img src="../static/assets/images/products-grill-burger.png" alt="">
+            </div>
+            <h3>Flamed Grill <span class="accent-text-color">Burger</span></h3>
+            <div class="price-add-cart">
+              <span class="accent-text-color">PHP 30.00</span>
+              <i class="fas fa-cart-plus"></i>
+            </div>
+          </div>
+          <div class="burger-items__item">
+            <div class="image-container">
+              <img src="../static/assets/images/products-bbq-burger.png" alt="">
+            </div>
+            <h3>Bacon <span class="accent-text-color">Burger</span></h3>
+            <div class="price-add-cart">
+              <span class="accent-text-color">PHP 30.00</span>
+              <i class="fas fa-cart-plus"></i>
+            </div>
+          </div>
+
+        </div>
+        <!--End Container Of Product Items -->
+      </div>
+    </section>
+    <!-- Contact Us -->
+    <section class="contact-us" id="goto-Contact">
+      <div class="wrapper">
+        <div class="contact-content">
+          <div class="contact-content__image-container">
+            <img src="../static/assets/images/contacts-bacon-burger.png" alt="">
+          </div>
+          <form action="" class="contact-content__form">
+            <h2><span class="accent-text-color">Leave</span> us a message</h2>
+            <div class="form">
+              <input type="text" id="firstname" class="inputForm" placeholder="Firstname" />
+              <input type="text" id="lastname" class="inputForm" placeholder="Lastname" />
+              <input type="tel" id="phone" class="inputForm" placeholder="Phone" />
+              <input type="text" id="firstname" class="inputForm" placeholder="Email" />
+              <textarea name="message" id="message" cols="30" rows="10" class="inputForm"
+                placeholder="Message" /></textarea>
+              <button class="btn btn-primary">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <%- include('./partials/footer.ejs') %>
+    <!-- End Footer -->
+  </main>
+
+
+
+  <!-- Vanilla Javascript -->
+  <script src="../static/js/main.js"></script>
+  <!-- Animation On Scroll Vanilla Javascript -->
+  <script src="../static/js/aos.js"></script>
+</body>
+
+</html>
